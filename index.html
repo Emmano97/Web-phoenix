@@ -1,0 +1,58 @@
+<!-- Multiple 
+lines of comments
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Quiz App with Timer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		<div id="quiz" >
+			<header>
+				<h1 id="h1">TimeQuizi</h1>
+			</header>
+			<div id="tracker">
+				<div class="point" id="point1">1</div>
+				<div class="point" id="point2">2</div>
+				<div class="point" id="point3">3</div>
+				<div class="point" id="point4">4</div>
+				<div class="point" id="point5">5</div>
+				<div class="point" id="point6">6</div>
+				<div class="point" id="point7">7</div>
+				<div class="point" id="point8">8</div>
+				<div class="point" id="point9">9</div>
+				<div class="point" id="point10">10</div>
+			</div>
+			<hr style="margin-bottom: 20px;">
+			<div id="quizSet">
+				<p id="question">Question 1 Text</p>
+				<div id="options">
+					<button id="btn1" class="btn option"><span id="option1">Option1</span></button>
+					<button id="btn2" class="btn option"><span id="option2">Option2</span></button>
+					<button id="btn3" class="btn option"><span id="option3">Option3</span></button>
+					<button id="btn4" class="btn option"><span id="option4">Option4</span></button>
+				</div>
+				<button id="submit">Next Question</button>
+			</div>
+			<div id="resultBox">
+				<p id="result">Congrats. You passed. <br/> Your score is 6. </p>
+				<img src="trophy.png" id="resultImg" alt="" class="center">
+				<button id="retake">Retake Test</button>
+			</div>
+			<hr style="margin-top: 30px;">
+			
+			<footer>
+				<p id="progress">Question 1 of 10</p>
+				<div id="timer">Timer</div>
+			</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+		<script src="questions.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
